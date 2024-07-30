@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Flex Item: grow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex-item: grow</h1>
+    <p>O <strong>grow</strong> é um estilo aplicado no <strong>flex-item</strong> e permite que os elementos cresçam dentro do <i>container</i> se houver espaço suficiente.</p>
+
+    <section>
+        <h2>Grow</h2>
+        <p><strong>flex-grow: 0;</strong> <br> é o valor padrão e quanto menor o <i>valor</i> do <strong>flex: grow</strong>, menos espaço o elemento terá. <mark>ATENÇÃO</mark> não podemos colocar <strong>justify-content</strong> em um elemento com <strong>grow</strong>, porque o <strong>justify-content</strong> não funcionará. O elemento <b>4</b> está estilizado como <strong>grow 0</strong>:</p>
+        <div class="container grow">
+            <div class="item grow1">1</div>
+            <div class="item grow2">2</div>
+            <div class="item grow3">3</div>
+            <div class="item grow0">4</div>
+        </div>
+    </section>
+
+    <section>
+        <p><strong>flex-grow: 1</strong>; <br> O elemento <b>4</b> está estilizado com <strong>grow 1</strong> os demais com <strong>grow 0</strong>:</p>
+        <div class="container grow">
+            <div class="item grow0">1</div>
+            <div class="item grow0">2</div>
+            <div class="item grow0">3</div>
+            <div class="item grow1">4</div>
+        </div>
+    </section>
+
+</body>
+</html>
